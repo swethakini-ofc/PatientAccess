@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <time>Patien Access</time>
+    </head>
+<body>
+<!-- FHIR Client JS Library -->
+<script src='./lib/fhir-client.js'></script>
+<script>
+    FHIR.oauth2.authorize({
+      'client_id': '626b27ff-73a7-4ec2-8ab3-2d646b5a6740',
+      'scope':  'patient/Patient.read patient/Observation.read launch/patient online_access openid profile'
+    });
+  </script>
+
+</body>
+</html>
